@@ -929,8 +929,7 @@
 
         /* Grids */
         .product-grid {
-          grid-template-columns: 1fr;
-          gap: 40px;
+         display: block;
         }
         .percentage-grid {
           grid-template-columns: 1fr 1fr;
