@@ -184,7 +184,7 @@
       /* ================= HERO ================= */
       .hero {
         position: relative;
-        background: url("../assets/main.png") center bottom no-repeat;
+        background: url("../Assets/main.png") center bottom no-repeat;
         /* Ensure background covers and stays centered */
         background-size: cover;
         min-height: 100vh;

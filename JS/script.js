@@ -6,11 +6,11 @@
 
       /* ================= GALLERY ================= */
       const images = [
-        "./assets/pord1.png",
-        "./assets/prod2.png",
-        "./assets/prod3.png",
-        "./assets/prod4.png",
-        "./assets/prod5.png",
+        "./Assets/pord1.png",
+        "./Assets/prod2.png",
+        "./Assets/prod3.png",
+        "./Assets/prod4.png",
+        "./Assets/prod5.png",
       ];
       let curIndex = 0;
 
@@ -61,18 +61,18 @@
       const frags = [
         {
           id: "original",
-          img: "./assets/perfume1.png",
+          img: "./Assets/perfume1.png",
           name: "Original",
           bestSeller: true,
         },
         {
           id: "lily",
-          img: "./assets/perfume2.png",
+          img: "./Assets/perfume2.png",
           name: "Lily",
         },
         {
           id: "rose",
-          img: "./assets/perfume3.png",
+          img: "./Assets/perfume3.png",
           name: "Rose",
         },
       ];
