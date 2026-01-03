@@ -929,7 +929,7 @@
 
         /* Grids */
         .product-grid {
-         display: block;
+         display: block !important;
         }
         .percentage-grid {
           grid-template-columns: 1fr 1fr;
