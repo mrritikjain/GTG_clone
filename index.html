@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTG | Live Your Best Life</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTG</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<body>
-
- <div class="overlay" onclick="toggleMenu()"></div>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="overlay" onclick="toggleMenu()"></div>
 
     <div class="mobile-menu" id="mobileMenu">
       <div class="close-menu" onclick="toggleMenu()">×</div>
@@ -28,10 +25,7 @@
       <a href="#">Contact</a>
     </div>
 
-   
-
-    <section class="hero">
-      <header>
+    <header>
       <div class="container nav">
         <div class="logo">GTG</div>
         <div class="nav-links">
@@ -105,9 +99,15 @@
         </div>
       </div>
     </header>
+
+    <section class="hero">
       <div class="hero-content-wrapper">
         <div class="hero-text-side reveal-on-scroll">
-          <div class="pill-badge">Awarded the best perfume in the world</div>
+          <div class="pill-badge">
+            <img src="./assets/Medal.png" alt="medal" /><span
+              >Awarded the best perfume in the world</span
+            >
+          </div>
           <h1>Live your best life.</h1>
           <div class="hero-stats">
             <div class="stat">
@@ -125,22 +125,21 @@
           </div>
           <button class="btn-green">Shop Now</button>
         </div>
-   
       </div>
     </section>
 
     <section class="container product-section">
       <div class="product-grid">
-        <div class="reveal-on-scroll">
+        <div class="product-gallery-wrapper reveal-on-scroll">
           <div class="gallery-main">
             <div class="gallery-viewport">
               <div class="gallery-track" id="galleryTrack"></div>
             </div>
             <div class="gallery-arrow arrow-left" onclick="changeSlide(-1)">
-              &#8249;
+              <img src="./Assets/arrow.png" alt="arrow" />
             </div>
             <div class="gallery-arrow arrow-right" onclick="changeSlide(1)">
-              &#8250;
+              <img src="./Assets/arrow.png" alt="arrow" />
             </div>
             <div class="gallery-dots" id="dotsContainer"></div>
           </div>
@@ -191,36 +190,47 @@
                   <p class="inc-title">What's Included:</p>
                   <div class="included-boxes">
                     <div
-                      class="inc-box"
+                      class="inc-box inc1"
                       data-plan="single"
                       data-val="monthly"
                       onclick="selectIncluded('single', 'monthly')"
                     >
                       <h5>Every 30 Days</h5>
-                      <img
-                        src="https://images.unsplash.com/photo-1594125311687-3b1b3e50f496?w=100"
-                      />
+                      <img src="./assets/perfume1.png" />
                     </div>
                     <div
-                      class="inc-box"
+                      class="inc-box inc2"
                       data-plan="single"
                       data-val="onetime"
                       onclick="selectIncluded('single', 'onetime')"
                     >
                       <h5>One Time (Free)</h5>
-                      <div
-                        style="display: flex; justify-content: center; gap: 5px"
-                      >
-                        <img
-                          src="https://images.unsplash.com/photo-1616083398288-29cb3239aadd?w=50"
-                        />
-                        <img
-                          src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=50"
-                        />
-                      </div>
+                      <img src="./assets/perfumeall.png" />
                     </div>
                   </div>
                 </div>
+
+                <!-- Dynamic Features for Single -->
+                <ul class="features-list">
+                  <li>
+                    <span class="check-icon">✓</span> 1 Bottle Shipped Monthly
+                  </li>
+                  <li>
+                    <span class="check-icon">✓</span> <b>Free</b> Sampler For
+                    Original, Lily And Rose Fragrances
+                  </li>
+                  <li>
+                    <span class="check-icon">✓</span> <b>50% OFF Shipping</b>
+                  </li>
+                  <li>
+                    <span class="check-icon">✓</span> Pause Or Cancel Anytime
+                    After 3 Months Minimum
+                  </li>
+                  <li>
+                    <span class="check-icon">✓</span> 28 Day Money Back
+                    Guarantee*
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -259,61 +269,59 @@
                   <p class="inc-title">What's Included:</p>
                   <div class="included-boxes">
                     <div
-                      class="inc-box"
+                      class="inc-box inc1"
                       data-plan="double"
                       data-val="monthly"
                       onclick="selectIncluded('double', 'monthly')"
                     >
                       <h5>Every 30 Days</h5>
-                      <img
-                        src="https://images.unsplash.com/photo-1594125311687-3b1b3e50f496?w=100"
-                      />
+                      <img src="./assets/perfume1.png" />
                     </div>
                     <div
-                      class="inc-box"
+                      class="inc-box inc2"
                       data-plan="double"
                       data-val="onetime"
                       onclick="selectIncluded('double', 'onetime')"
                     >
                       <h5>One Time (Free)</h5>
-                      <div
-                        style="display: flex; justify-content: center; gap: 5px"
-                      >
-                        <img
-                          src="https://images.unsplash.com/photo-1616083398288-29cb3239aadd?w=50"
-                        />
-                        <img
-                          src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=50"
-                        />
-                        <img
-                          src="https://images.unsplash.com/photo-1594125311687-3b1b3e50f496?w=50"
-                        />
-                      </div>
+                      <img src="./assets/perfumeall.png" />
                     </div>
                   </div>
                 </div>
+
+                <!-- Dynamic Features for Double -->
+                <ul class="features-list">
+                  <li>
+                    <span class="check-icon">✓</span> 2 Bottles Shipped Monthly
+                  </li>
+                  <li>
+                    <span class="check-icon">✓</span> <b>Free</b> Sampler For
+                    All Fragrances
+                  </li>
+                  <li>
+                    <span class="check-icon">✓</span> <b>Free Shipping</b>
+                  </li>
+                  <li>
+                    <span class="check-icon">✓</span> Pause Or Cancel Anytime
+                    After 3 Months Minimum
+                  </li>
+                  <li>
+                    <span class="check-icon">✓</span> 28 Day Money Back
+                    Guarantee*
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
 
-          <ul class="features-list">
-            <li><span>✓</span> 1 Bottle Shipped Monthly</li>
-            <li>
-              <span>✓</span> <b>Free</b> Sampler For Original, Lily And Rose
-              Fragrances
-            </li>
-            <li><span>✓</span> <b>50% OFF Shipping</b></li>
-            <li>
-              <span>✓</span> Pause Or Cancel Anytime After 3 Months Minimum
-            </li>
-          </ul>
+          <!-- Add to Cart outside loop -->
           <a
             id="addToCartBtn"
             href="#"
             class="btn-green"
             style="
               width: 100%;
-              border-radius: 50px;
+              border-radius: 5px;
               display: block;
               text-decoration: none;
               font-size: 18px;
@@ -329,22 +337,15 @@
       <div
         class="collection-intro"
         style="margin-bottom: 40px; text-align: left"
-      >
-        <p
-          style="
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: bold;
-            letter-spacing: 2px;
-          "
-        >
-          ---
-        </p>
-        <h2 style="font-size: 36px; color: var(--primary)">Our Collection</h2>
-      </div>
+      ></div>
 
       <div class="collection-grid">
         <div class="accordion">
+          <h2
+            style="font-size: 36px; color: var(--primary); margin-bottom: 20px"
+          >
+            Our Collection
+          </h2>
           <div class="accordion-item" onclick="toggleAcc(this)">
             <div class="acc-header">
               <span>Signature Scents</span><span class="acc-icon">+</span>
@@ -379,9 +380,7 @@
           </div>
         </div>
         <div class="collection-img">
-          <img
-            src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-          />
+          <img src="./assets/faqs.png" />
         </div>
       </div>
     </section>
@@ -424,33 +423,25 @@
             <div class="comp-col quality-name">Qualities</div>
             <div class="comp-col gtg-header-box">
               <div class="prod-img-main">
-                <img
-                  src="https://images.unsplash.com/photo-1594125311687-3b1b3e50f496?w=100"
-                />
+                <img src="./assets/subscription.png" />
               </div>
               GTG
             </div>
             <div class="comp-col">
               <div class="prod-img-box">
-                <img
-                  src="https://images.unsplash.com/photo-1616083398288-29cb3239aadd?w=80"
-                />
+                <img src="./assets/prod2.png" />
               </div>
               Arose
             </div>
             <div class="comp-col">
               <div class="prod-img-box">
-                <img
-                  src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80"
-                />
+                <img src="./assets/prod4.png" />
               </div>
               Bella
             </div>
             <div class="comp-col">
               <div class="prod-img-box">
-                <img
-                  src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=80"
-                />
+                <img src="./assets/prod5.png" />
               </div>
               Daisies
             </div>
@@ -649,7 +640,6 @@
       </div>
     </footer>
 
-<script src="JS/script.js"></script>
-
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

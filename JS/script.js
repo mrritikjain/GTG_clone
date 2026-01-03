@@ -1,4 +1,4 @@
-  /* ================= MENU ================= */
+/* ================= MENU ================= */
       function toggleMenu() {
         document.getElementById("mobileMenu").classList.toggle("active");
         document.querySelector(".overlay").classList.toggle("active");
@@ -6,10 +6,11 @@
 
       /* ================= GALLERY ================= */
       const images = [
-        "https://images.unsplash.com/photo-1594125311687-3b1b3e50f496?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-        "https://images.unsplash.com/photo-1616083398288-29cb3239aadd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-        "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-        "https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+        "./assets/pord1.png",
+        "./assets/prod2.png",
+        "./assets/prod3.png",
+        "./assets/prod4.png",
+        "./assets/prod5.png",
       ];
       let curIndex = 0;
 
@@ -60,17 +61,18 @@
       const frags = [
         {
           id: "original",
-          img: "https://images.unsplash.com/photo-1594125311687-3b1b3e50f496?w=50",
+          img: "./assets/perfume1.png",
           name: "Original",
+          bestSeller: true,
         },
         {
           id: "lily",
-          img: "https://images.unsplash.com/photo-1616083398288-29cb3239aadd?w=50",
+          img: "./assets/perfume2.png",
           name: "Lily",
         },
         {
           id: "rose",
-          img: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=50",
+          img: "./assets/perfume3.png",
           name: "Rose",
         },
       ];
@@ -95,9 +97,19 @@
             e.stopPropagation();
             state[key] = f.id;
             renderAll();
-            updateBtn();
+            updateBtn(); // Ensure button updates on selection
           };
-          d.innerHTML = `<img src="${f.img}"><span>${f.name}</span>`;
+
+          let badgeHtml = f.bestSeller
+            ? '<div class="best-seller-tag">BEST SELLER</div>'
+            : "";
+
+          // Name First, Then Image
+          d.innerHTML = `
+            ${badgeHtml}
+            <span>${f.name}</span>
+            <img src="${f.img}">
+          `;
           c.appendChild(d);
         });
       }
