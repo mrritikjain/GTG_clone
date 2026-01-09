@@ -1,7 +1,6 @@
 /* ================= MENU ================= */
       function toggleMenu() {
         document.getElementById("mobileMenu").classList.toggle("active");
-        document.querySelector(".overlay").classList.toggle("active");
       }
 
       /* ================= GALLERY ================= */
